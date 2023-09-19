@@ -1,15 +1,16 @@
-[200~#include "main.h"
+#include "holberton.h"
 
 /**
- *  * swap_int - swaps the values of two integers
- *   * @a: pointer to first value
- *    * @b: pointer to second value
- *     */
+ * swap_int - function that swaps the values of two integers.
+ * @a: this is the first entry
+ * @b: this is the second entry
+ *
+ *
+ */
 void swap_int(int *a, int *b)
 {
-		int c;
+	int changed;
 
-			c = *a;
-				*a = *b;
-					*b = c;
-}
+	changed = *a;
+	*a = *b;
+	*b = changed;
